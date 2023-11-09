@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Outfit:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h2,
+h3 {
+    font-family: "Fraunces", serif;
+}
+
+p {
+    font-size: 0.95rem;
+    font-weight: lighter;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+section.first {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 720px;
+    padding: 1rem 2rem;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+section.first .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    color: white;
+}
+
+section.first .navbar p {
+    font-size: 1.2rem;
+}
+
+section.first .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+    font-size: 0.85rem;
+}
+
+section.first .navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section.first .navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 100vw;
+    font-size: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section.first .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+section.first .intro h1 {
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    align-items: center;
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+    margin: 100px;
+}
+
+section.second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    min-width: 100%;
+}
+
+section .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 50px;
+    max-width: 50%;
+}
+
+section.second img {
+    min-height: 420px;
+    min-width: 100%;
+}
+
+section.second a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration-color: hsl(51, 100%, 78%);
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.5rem;
+    text-underline-offset: -0.2rem;
+    text-decoration-skip-ink: none;
+    font-family: "Fraunces", serif;
+    font-size: small;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+section.second a:hover {
+    text-decoration-color: hsl(51, 100%, 50%);
+}
+
+section.third {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    min-width: 100%;
+}
+
+section.third img {
+    min-height: 420px;
+    min-width: 100%;
+}
+
+section.third a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration-color: hsl(7, 82%, 76%);
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.5rem;
+    text-underline-offset: -0.2rem;
+    text-decoration-skip-ink: none;
+    font-family: "Fraunces", serif;
+    font-size: small;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+section.third a:hover {
+    text-decoration-color: hsl(7, 67%, 60%);
+}
+
+section.fourth {
+    display: flex;
+    flex-direction: row;
+    min-height: 600px;
+    min-width: 100%;
+}
+
+section.fourth .first-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-width: 50%;
+    padding: 150px 50px 0;
+    color: hsl(167, 40%, 24%);
+}
+
+section.fourth .second-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-width: 50%;
+    padding: 150px 50px 0;
+    color: hsl(198, 62%, 26%);
+}
+
+section.fifth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.fifth h2 {
+    margin: 80px 0 0;
+    padding-bottom: -50px;
+    font-size: 16px;
+    font-stretch: ultra-expanded;
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+}
+
+section.fifth .boxes {
+    display: flex;
+    flex-direction: row;
+    padding: 120px 50px;
+}
+
+section.fifth .boxes .box img {
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+section.fifth .boxes .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+section.fifth .boxes .box .discription {
+    margin-top: 20px;
+}
+
+section.fifth .boxes .box .discription h3 {
+    font-size: 14px;
+    margin-bottom: -5px;
+}
+
+section.fifth .boxes .box .discription .faint {
+    color: hsl(210, 4%, 67%);
+}
+
+section.sixth img {
+    min-width: 50%;
+}
+
+section.sixth {
+    display: flex;
+    flex-direction: row;
+    /* max-width: 50%; */
+}
+
+section.sixth .one {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+}
+
+section.sixth .two {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(168, 60%, 69%);
+}
+
+footer h3 {
+    font-family: "Barlow", sans-serif;
+    color: hsl(167, 40%, 24%);
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space between;
+    gap: 50px;
+    font-size: 0.75rem;
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+footer ul li a {
+    color: hsl(168, 34%, 41%);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+footer .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+footer .icons a {
+    margin-top: 30px;
+    color: hsl(167, 40%, 24%);
+}
+
+.fa-brands:hover {
+    color: white;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: start;
+    padding: -50px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+    article.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    section.first {
+        height: 720px;
+        padding: 1rem 1rem;
+    }
+
+    section.first {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.first .navbar ul {
+        display: none;
+    }
+
+    section.first .intro h1 {
+        font-size: 2.0rem;
+        /* margin-bottom: 70px; */
+    }
+
+    section.second {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+        height: 500px;
+        /* font-size: 1.1rem; */
+    }
+
+    section.third {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.fourth {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.fourth .first-box,
+    section.fourth .second-box {
+        height: 500px;
+    }
+
+    section.fifth {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        height: 100%;
+    }
+
+    section.fifth h2 {
+        font-size: 1.3rem;
+    }
+
+    section.fifth .boxes {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    section.fifth .boxes .box {
+        margin: 50px 0;
+    }
+
+    section.sixth {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    section.sixth .one,
+    section.sixth .two {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
